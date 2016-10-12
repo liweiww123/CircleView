@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleView">
+        <attr name="imgSrc" format="reference"/>
+        <attr name="leftPadding" format="dimension"/>
+        <attr name="topPadding" format="dimension"/>
+    </declare-styleable>
+</resources>
