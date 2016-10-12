@@ -69,14 +69,8 @@ public class CircleView extends View {
         int width = measureWidth(widthMeasureSpec);
         int height = measureHeight(heightMeasureSpec);
         viewWidth = Math.min(width, height);    //set the view's height and width were equal forced!!
-        if (width < height && leftPadding != -1) {
-            throw new IllegalArgumentException("you can't set leftPadding when img's width<height");
-        } else if (height < width && topPadding != -1) {
-            throw new IllegalArgumentException("you can't set topPadding when img's width>height");
-        } else {
-            setMeasuredDimension(viewWidth, viewWidth);
-            radius = viewWidth / 2;
-        }
+        setMeasuredDimension(viewWidth, viewWidth);
+        radius = viewWidth / 2;
     }
 
     private void inits() {
@@ -91,10 +85,14 @@ public class CircleView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        bitmapWidth = Math.min(bitmap.getWidth(), bitmap.getHeight());
-        scaleRatio = viewWidth * 1.0f / bitmapWidth;   //计算图片缩放比例
-        Log.d("kklog", "scaleRatio==>" + scaleRatio);
 
+        bitmapWidth = Math.min(bitmap.getWidth(), bitmap.getHeight());
+        if (bitmap.getWidth() < bitmap.getHeight() && leftPadding != -1) {
+            throw new IllegalArgumentException("you can't set leftPadding when img's width<height");
+        } else if (bitmap.getWidth() > bitmap.getHeight() && topPadding != -1) {
+            throw new IllegalArgumentException("you can't set topPadding when img's width>height");
+        }
+        scaleRatio = viewWidth * 1.0f / bitmapWidth;   //计算图片缩放比例
         if (leftPadding != -1) {
             if (leftPadding + 2 * radius > bitmap.getWidth()) {
                 throw new IllegalArgumentException("leftPadding is too large");
