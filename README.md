@@ -71,7 +71,7 @@ Circle Demo for me
 即旋转180度（方向默认为顺时针），然后可以了，该属性可以搭配上面的`leftPadding`和`topPadding`属性一起使用，即可以同时偏移并且旋转。
 下面贴一张效果图：
 
-![](https://github.com/youngkaaa/CircleView/blob/master/app/src/main/res/drawable/circle_rotation.png)
+![](https://github.com/youngkaaa/CircleView/blob/master/app/pics/circle_rotation.png)
 
 然而在我调试完成这个属性后，我发现系统中原本就自带了该属性：`android:rotation`,哎呀丢死个人。。
 
