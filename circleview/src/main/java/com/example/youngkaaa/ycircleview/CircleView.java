@@ -11,7 +11,6 @@ import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -98,45 +97,6 @@ public class CircleView extends View {
         } else if (bitmap.getWidth() > bitmap.getHeight() && topPadding != -1) {
             throw new IllegalArgumentException("you can't set topPadding when img's width>height");
         }
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        int x= (int) event.getX();
-        int y= (int) event.getY();
-        switch (event.getAction()){
-            case MotionEvent.ACTION_DOWN:
-
-                break;
-            case MotionEvent.ACTION_MOVE:
-                int deltaX=x-lastX;
-                int deltaY=y-lastY;
-                if(Math.abs(deltaX)>Math.abs(deltaY)){
-                    if(deltaX>0){
-                        Log.d("kklog","CW");
-                    }else if(deltaX<0){
-                        Log.d("kklog","ACW");
-                    }
-                }else{
-                    if(deltaY>0){
-                        Log.d("kklog","CW");
-                    }else if(deltaY<0){
-                        Log.d("kklog","ACW");
-                    }
-                }
-
-
-
-
-                break;
-            case MotionEvent.ACTION_UP:
-
-                break;
-        }
-        lastX=x;
-        lastY=y;
-        return true;
-
     }
 
     private void inits() {
