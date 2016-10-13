@@ -4,5 +4,6 @@
         <attr name="imgSrc" format="reference"/>
         <attr name="leftPadding" format="dimension"/>
         <attr name="topPadding" format="dimension"/>
+        <attr name="rotation" format="integer"/>
     </declare-styleable>
 </resources>

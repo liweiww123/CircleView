@@ -1,1 +1,1 @@
-include ':app', ':ycircleview'
+include ':app', ':circleview'

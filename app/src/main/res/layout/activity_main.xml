@@ -18,33 +18,33 @@
         <com.example.youngkaaa.ycircleview.CircleView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:imgSrc="@drawable/jay_jay"/>
+        app:imgSrc="@drawable/jay_back"/>
 
         <com.example.youngkaaa.ycircleview.CircleView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            app:imgSrc="@drawable/jay_jay"/>
+            app:imgSrc="@drawable/jay_back"/>
 
         <com.example.youngkaaa.ycircleview.CircleView
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:imgSrc="@drawable/jay_jay"/>
+        app:imgSrc="@drawable/jay_back"/>
 
         <com.example.youngkaaa.ycircleview.CircleView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:imgSrc="@drawable/jay_jay"/>
+            app:imgSrc="@drawable/jay_back"/>
 
         <com.example.youngkaaa.ycircleview.CircleView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:imgSrc="@drawable/jay_jay"/>
+            app:imgSrc="@drawable/jay_back"/>
 
 
         <com.example.youngkaaa.ycircleview.CircleView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            app:imgSrc="@drawable/jay_jay"/>
+            app:imgSrc="@drawable/jay_back"/>
 
     </LinearLayout>
 
@@ -58,7 +58,7 @@
         <com.example.youngkaaa.ycircleview.CircleView
             android:layout_width="230dp"
             android:layout_height="230dp"
-            app:imgSrc="@drawable/jay_jay"/>
+            app:imgSrc="@drawable/jay_back"/>
 
     </LinearLayout>
 
@@ -71,8 +71,8 @@
         <com.example.youngkaaa.ycircleview.CircleView
             android:layout_width="230dp"
             android:layout_height="230dp"
-            app:leftPadding="160dp"
-            app:imgSrc="@drawable/jay_jay"/>
+            app:rotation="180"
+            app:imgSrc="@drawable/jay_back"/>
     </LinearLayout>
 
 </LinearLayout>
