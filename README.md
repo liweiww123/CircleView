@@ -55,6 +55,25 @@ Circle Demo for me
 
 看吧，我伦的正脸可以看到了吧。
 
+### 继续更新
+
+这次加入旋转功能，即有时候你会遇到当你使用圆形显示了图片后由于原图片中有些场景是倾斜的，导致显示出来的圆形中的图案不是很端正的，你就想着可不可以旋转一下显示。这次加入`rotation`属性。
+使用方法很简单，就像下面这样：
+
+```
+<com.example.youngkaaa.ycircleview.CircleView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            app:rotation="180"
+            app:imgSrc="@drawable/jay_back"/>
+```
+
+即旋转180度（方向默认为顺时针），然后可以了，该属性可以搭配上面的`leftPadding`和`topPadding`属性一起使用，即可以同时偏移并且旋转。
+下面贴一张效果图：
+
+![](https://github.com/youngkaaa/CircleView/blob/master/app/src/main/res/drawable/circle_rotation.png)
+
+然而在我调试完成这个属性后，我发现系统中原本就自带了该属性：`android:rotation`,哎呀丢死个人。。
 
 ## 写在最后
 
