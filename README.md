@@ -5,6 +5,12 @@ Circle Demo for me
 
 ## 使用方法
 
+在`build.gradle`文件中加上这句：
+
+`ompile 'com.github.youngkaaa:circleview:0.1.0'`
+
+
+
 使用方法很简单就是在布局文件中声明它就行了，比如这样：
 
 ```
