@@ -7,7 +7,7 @@ Circle Demo for me
 
 在`build.gradle`文件中加上这句：
 
-`ompile 'com.github.youngkaaa:circleview:0.1.0'`
+`compile 'com.github.youngkaaa:circleview:0.1.0'`
 
 
 
